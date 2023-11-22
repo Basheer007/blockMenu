@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@200;500;600;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("../Images/background.png");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+body .header {
+  height: 6em;
+}
+body .header .nav-bar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .header .nav-bar .logo-container {
+  width: 30%;
+}
+body .header .nav-bar .nav-list .hamburger-container {
+  width: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+body .header .nav-bar .nav-list .hamburger-container svg {
+  width: 100%;
+  height: auto;
+}
+body .header .nav-bar .nav-list .menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  right: -100%;
+  bottom: 0;
+  z-index: 200;
+  transition: all 0.5s;
+}
+body .header .nav-bar .nav-list .menu .animate-bars {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  z-index: 300;
+}
+body .header .nav-bar .nav-list .menu .animate-bars .block {
+  width: 100%;
+  height: 21%;
+  position: relative;
+  z-index: 400;
+  background: linear-gradient(to right, #072e4b, #018280);
+}
+body .header .nav-bar .nav-list .menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  display: grid;
+  row-gap: 1rem;
+  z-index: 500;
+}
+body .header .nav-bar .nav-list .menu ul a {
+  color: rgb(35, 235, 241);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+body .header .nav-bar .nav-list .menu ul .close-container {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -250px;
+  right: -80px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+body .header .nav-bar .nav-list .menu ul .close-container svg {
+  width: 100%;
+  height: 100%;
+}
+body .header .nav-bar .nav-list .showmenu {
+  left: 0;
+  right: 0;
+}
+
+.main {
+  background: red;
+}
+
+/*# sourceMappingURL=style.css.map */
